@@ -17,15 +17,15 @@
 //    about the type of the variable because the type for each
 //  variable will be set dynamically during code execution.
 
-const heros=["shtiman","doga"]
-let myobj={
-    name:"faisal",
-    age:22,
-}
+// const heros=["shtiman","doga"]
+// let myobj={
+//     name:"faisal",
+//     age:22,
+// }
 
-const myfunction= function(){
-    console.log("hello")
-}
+// const myfunction= function(){
+//     console.log("hello")
+// }
 
 
 //   type of val                        RESULT
@@ -39,3 +39,11 @@ const myfunction= function(){
 //   Object                              impl defined may not be "undefined"
 //                                       " boolean","number",or"string"
 
+let userone= {
+    email:"faisal@gmail.com",
+    upi:"user@paypal"
+}
+let usertwo = userone
+usertwo.email="babar@gmal.com"
+console.log(userone.email);
+console.log(usertwo.email);
