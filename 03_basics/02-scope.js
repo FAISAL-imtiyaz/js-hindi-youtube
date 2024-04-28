@@ -28,7 +28,21 @@
     price: 800,
     welcomeMessage: function(){
         console.log(`${this.username}, welcome to website`);
-
+        console.log(this);//2
     }
   }
   user.welcomeMessage()
+  user.username="sam"
+  user.welcomeMessage()
+//   console.log(this);1
+//  
+const chai = ()=>{
+  let username="faisal"//undefined  o/p
+  console.log(this.username)
+}
+
+// const addTwo= (num1, num2)=>{
+//   return num1+ num2
+// }
+// implicit return
+const addTwoo =()=> (num1 + num2)  //this returen num1  + num2
