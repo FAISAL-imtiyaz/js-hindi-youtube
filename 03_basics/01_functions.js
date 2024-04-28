@@ -10,6 +10,7 @@ function calculateCartPrice(val1,val2, ...num1){
     return num1
 }
 console.log(calculateCartPrice(200,400,500,2000))
+// onject-----------------------------------------------
 const user ={
     username:"hitesh",
     price:199
@@ -29,3 +30,9 @@ function returnsecondvalue(getArray){
 }
 console.log(returnsecondvalue(mynewarray));
 console.log(returnsecondvalue([200,3000,400,1000]));
+// __________________________________________function 20
+function calculateCartPricee(...num1){
+    return num1;
+}
+console.log(calculateCartPricee(200,400,500,2000));
+// -^ thisgives all  arguments in array form. in num1.
