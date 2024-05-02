@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .bg-black{
+            background-color:  black;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>max =arr[0];
-    <div class ="bg-black">
+<body class ="bg-black">
+    <div >
         <h1 id="title" class="heading"> DOM learning on chai air code</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
     
 </body>
 </html>
+
+<!-- document.getElementById('title').getAttribute('id') -->
+<!-- document.getElementById('title').stAttribute('class',test) -->
+<!-- undefined -->
+<!-- document.getElementById('title').stAttribute('class','test heading') -->
+<!-- undefined -->
+<!-- we cand apply map on node list  because array and nodelist aree some what
+sifferent  so to apply map on node list we need to convert nodelist to array -->
+<!-- html Collection ned to be converted to use map on it --> 
+const templist = document.getElementByClassName('list-item')
+<!-- use Array.from (templist )-->
+
+<!-- website wikipedia
+const myh2 = document.queryselectorall('.mw-headline')
+undefined
+myh2[0].innerText
+>history
+ myh2
+>NOdeLiat[40]
+ myh2.foreach(function(h){
+    h.style.color="red"
+ })
+>undefined
+myh2.foreach(function(h){            in nodelist we can use for each but not map
+    h.style.color="red"
+    h.style.bgcolor="green"
+    h.style.padding="10px"
+    h.innerText="faisal"
+ })-->
