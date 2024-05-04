@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>chai aur code | DOM</title>
+</head>
+<body tyle="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+      const li =document.createElement('li')
+      li.innerHTML=`${langName}`
+      document.querySelector('.language').appendChild(li)  
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+    function addoptiLanguage(langName){
+        const li =document.createElement('li');
+        li.appendChild(document.createElement(langName))
+        document.querySelector('.language').appendChild(li)
+        
+    }
+addoptiLanguage('golang')
+// EDIT
+const secondlang= document.querySelector("li:nth-child(2)")
+// secondlang.innerHTML="mojo"
+const newli  =document.createElement('li')
+newli.textContent="Mojo"
+secondlang.replaceWith(newli)
+
+// edit
+const firstlang = document.querySelector("li:first-child")
+firstlang.outerHTML='<li>Typescript</li>'
+
+// remove
+const lastlang= document.querySelector('li:last-child')
+lastlang.remove()
+</script>
+</html> 
+
+<!-- function addoptilang(langname){
+    <! --better>
+    const li=documnet.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.queryselector('.language').appendChild(li)
+}
+addoptilanguage("golong")
+    or
+const li=documnet.createElement('li');
+const addText = document.createTextNode(langName)
+li.appendChild(addText)
+    document.queryselector('.language').appendChild(li)
+}
+addoptilanguage("golong")
+
+} -->
