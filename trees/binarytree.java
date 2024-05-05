@@ -31,7 +31,7 @@ import java.util.Scanner;
         }
         System.out.println("do you want to enter a right"+ node.value);
         boolean right = scanner.nextBoolean();
-        if(left){
+        if(right){
             System.out.println("enter the value of the right of"+ node.value);
             int value =scanner.nextInt();
             node.right=new Node(value);
@@ -41,20 +41,20 @@ import java.util.Scanner;
 
 }
 public void display(){
-    display(root,"");
+    display(this.root,"");
 }
-private display(Node node, String indent){
-if(node!=null){
+private void display(Node node, String indent){ 
+if(node == null){
     return;
 }
 System.out.println(indent + node.value);
-display(node.left);
-display(node.right+ indent "\t");
-display(node.right + indent + "\t")
-
-public static void(String []args){
-    Scanner scanner new Scannnr(System.in);
-    binarytreetree tree = new binarytree();
-    tree.populate(scanner)
+display(node.left ,indent  +  "\t");
+display(node.right , indent  +  "\t");
+}
+public static void main(String []args){
+    Scanner scanner = new Scanner(System.in);
+    binarytree  tree = new binarytree();
+    tree.populate(scanner);
     tree.display();
 }
+ }
