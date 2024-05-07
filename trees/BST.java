@@ -109,5 +109,4 @@ class BST {
     }
 // Main Method: It creates an instance of the BST class, populates it with an array of integers, and displays the tree.
 // In summary, this code provides a basic implementation of a Binary Search Tree along with methods to perform common operations on it.
-    
 }
