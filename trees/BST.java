@@ -84,11 +84,27 @@ class BST {
             this.insert(nums[i]);
         }
     }
+
+    public void populateSorted(int[]nums){          //n *log n    
+        populateSorted(nums, 0, nums.length-1);
+    }
+    private void populateSorted(int[]nums, int start,int end){
+        if(start>= end){
+            return;
+        }
+        int mid = (start + end)/2;
+        this.insert(nums[mid]);
+        populateSorted(nums,start,mid);
+        populateSorted( nums, mid+1,end);
+    }
+
     // Main Method: Creates an instance of the BST, populates it with an array of integers, and displays the tree.
     public static void main(String[]args){
         BST tree = new BST();
         int []nums= {5,2,7,1,4,6,9,8,3,10};
         tree.populate(nums);
+        tree.display();
+        tree.populateSorted(nums);
         tree.display();
     }
 // Main Method: It creates an instance of the BST class, populates it with an array of integers, and displays the tree.
