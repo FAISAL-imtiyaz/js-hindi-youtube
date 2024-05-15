@@ -5,7 +5,7 @@ javascript
 execution context
 execute one line  of code at a time
 
-->xonsole log  ->1
+->console log  ->1
 console log ->2
 
 blocking code        vs  | Non blocking code
